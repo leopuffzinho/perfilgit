@@ -6,16 +6,13 @@ main {
     text-align: center;
     width: 850px;
     margin: 0 auto;
-    background-color: bisque;
     border-radius: 10px;
 }
 .sobre-mim {
-    background-color: rgb(250, 233, 187);
+    background-color: rgb(88, 88, 156);
     padding: 10px 60px;
     border-radius: 50px;
     margin-top: 25px;
-    width: 700px;
-    margin-left: 15px;
     
 }
 figure {
@@ -31,9 +28,133 @@ img {
     width: 100%;
     object-fit: cover;
 }
-.botao {
-    border-radius: 10px;
-    background-color: white;
-   width: 150px;
-   height: 40px;
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+
+body.dark {
+  background: #292c35;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  position: relative;
+  height: 30px;
+  width: 50px;
+  transform: scale(1.5);
+
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+.containers{
+    height: 500px;
+    width: 850px;
+    margin: 0 auto;
+    border-radius: 15px;
+
+    background: linear-gradient(0, #120c56, #000000);
+    overflow: hidden;
+  }
+  .stars{
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+}
+.stars{
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+}
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
+.stars{
+	animation: anim-stars 10s linear infinite;
+}
+.stars::after{
+    content: " ";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+      100px 80px white,
+      80px 120px white,
+      300px 20px white,
+      250px 130px white,
+      200px 50px white,
+      150px 100px white,
+      320px 100px white;
+  }
+  .stars{
+	position: relative;
+	width: 3px;
+	height: 3px;
+}
+.stars::after{
+    content: " ";
+    position: absolute;
+    top: 150px;
+    width: 3px;
+  }
