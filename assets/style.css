@@ -158,3 +158,6 @@ body.dark {
     top: 150px;
     width: 3px;
   }
+  .cores {
+    color: rgb(88, 88, 156);
+  }
