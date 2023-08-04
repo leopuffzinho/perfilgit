@@ -1,0 +1,35 @@
+body {
+    background-color: antiquewhite;
+}
+main {
+    text-align: center;
+    width: 850px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+.sobre-mim {
+    background-color: rgb(250, 233, 187);
+    padding: 10px 60px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+.detalhes>span {
+    display: block;
+    margin-top: 8px;
+}
+.detalhes {
+    margin-top: 25px;
+}
+figure {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
